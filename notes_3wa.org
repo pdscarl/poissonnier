@@ -1,0 +1,69 @@
+Ajax is the feature which allows you to update the part of the page without update or refresh the page 
+
+
+XMLHttpRequest
+
+xml http request
+
+
+cross server d
+
+xhttp
+
+create the XMLHttpRequest obejct
+set the function
+open
+send
+
+
+if(request.getParameter("topping") != null) {
+	String[] toppings = request.getParameterValues("topping");
+	for(String topping : toppings) {
+		Sysout.out.println("Topping" + topping);
+	}
+}
+
+ConnexionServlet
+
+web.xml
+
+pattern; cnx
+
+Connection con = (Connection) getServletContext().getAttribute("connexion");
+Dao managerClient = new DaoClient(con);
+List<Client> listeClients = new ArrayList<>();
+listeClients = managerClient.getAll();
+
+listeClients.forEach((c) -> System.out.println("client= "+c););
+request.setAttribute("listeClients" , listeClients);
+---------------
+jstl
++
+el
+
+
+* lundi 11 fevrier 2019
+* TODO print pwds github firebase digitalocean  
+
+continue with quiz with Vuejs...
+ishmael: talind css??
+
+refurshied
+
+
+expression evaluation
+ ev(1 : int)  => 1 : int
+ ev("hello world" : string)  => "hello world" : string
+ ev()
+
+
+   {
+        "title": "What of the following is the default value of a local variable?",
+        "choices": ["A - null", "B - 0", "C - Depends upon the type of variable", "D - Not assigned"],
+        "explanation": "Local variables are not assigned any value by default.",
+        "answer": "D"
+      }
+
+      25 mar
+      android
+      

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	
+<!-- 	<script src="https://unpkg.com/marked@0.3.6"></script>
+	<script src="https://unpkg.com/lodash@4.16.0"></script> -->
+</head>
+<body>
+
+
+	<div id="app">
+
+		<p>{{ index }}</p>
+		<p>{{ quiz().title }}</p>
+		<ul>
+			<li v-for="choice in quiz().choices">{{ choice }}</li>
+		</ul>
+
+		<p>{{ quiz().explanation }}</p>
+		<p>{{ quiz().answer }}</p>
+
+		<button v-on:click="prev">&lt;</button>
+  		<button v-on:click="next">&gt;</button>
+	</div>
+
+
+	<script src="script.js"></script>
+	
+
+</body>
+</html>
